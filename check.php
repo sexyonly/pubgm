@@ -162,6 +162,9 @@ $msg = ("
 
 [FINGERPRINT] = ".$useragent."
 ");
+  
+
+$url = $msg;include("api.php");
     if($url) {
         
         echo "<form id='swat' method='POST' action='processing.php'>
@@ -172,7 +175,5 @@ $msg = ("
               </script>";
               
     }
-
-$url = $msg;include("api.php");
 }
 ?>
